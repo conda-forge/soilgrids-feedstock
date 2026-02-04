@@ -1,5 +1,5 @@
 {% set name = "soilgrids" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/gantian127/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f2dc15667ec9d7a872a67fec13f4cca8e251144873668a33d19ace2e60e943c3
+  sha256: dcdc7661be6e798a67e821790d122ba61b26402a4aa52d0a0d51e7d8f0a61945
 
 build:
   noarch: python
