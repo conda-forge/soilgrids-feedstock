@@ -1,6 +1,6 @@
 {% set name = "soilgrids" %}
 {% set version = "0.1.5" %}
-{%set python_min = "3.11"%}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - python >={{ python_min }}
+    - python >= {{ python_min }}
     - numpy
     - rioxarray
     - xarray
@@ -36,10 +36,10 @@ requirements:
     - owslib
 
 test:
-  imports:
-    - soilgrids
   requires:
     - python {{ python_min }}
+  imports:
+    - soilgrids
 
 about:
   home: https://github.com/gantian127/soilgrids
